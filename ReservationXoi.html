@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xơi Reservation</title>
+  <link rel="stylesheet" href="StyleReservation.css">
+</head>
+
+<body>
+    <header>
+            <div class="logo">
+                <img src="link_to_your_logo.png" alt="Logo">
+            </div>
+            <nav>
+              <ul>
+                <li><a href="HomepageXoi.html">About us</a></li>
+                <li><a href="MenuXoi.html">Menu</a></li>
+                <li><a href="ReservationXoi.html">Reservation</a></li>
+              </ul>
+            </nav>
+    </header>
+    
+    <main>
+    <section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.822149032737!2d105.84422265056953!3d21.039801111686874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abbad2e66979%3A0xc77a1bf7162b8f0!2zNDggUC4gUGhhbiDEkMOsbmggUGjDuW5nLCBRdcOhbiBUaMOhbmgsIEJhIMSQw6xuaCwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1701026511654!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <section>
+        <div class="survey">
+            <section class="reservation-form">
+                <div class="booking-info">
+                  <h1>BOOK YOUR TABLE</h1>
+                  <h2>Simply fill in the information below to make a reservation,</h2>
+                  <h2>and our team member will get back to you as soon as possible.</h2>
+                </div>
+              
+                <div class="survey">
+                  <form>
+                    <div class="form-group">
+                      <label for="fullName">Full name:</label>
+                      <input type="text" id="fullName" name="fullName" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="phoneNumber">Phone number:</label>
+                      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="guestsNumber">Number of guests:</label>
+                      <input type="number" id="guestsNumber" name="guestsNumber" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="date">Date:</label>
+                      <input type="date" id="date" name="date" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="specialQuestion">Special question:</label>
+                      <textarea id="specialQuestion" name="specialQuestion" rows="1" cols="50"></textarea>
+                    </div>
+              
+                    <input type="submit" value="Book Now">
+                  </form>
+                </div>
+              </section>
+              
+      </main>      
+</body>
+
+<aside id="back-to-top">
+    <a href="#header">Back to top ➧</a>
+  </aside>
+  <script>
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+  </script>
+
+  <footer>
+    <div class="information">
+        <h2>Xơi Cuisine | Vietnamese Restaurant</h2>
+        <p>Address: 48B, Phan Dinh Phung Street, Hanoi, Vietnam</p>
+        <p>Opening hours: 10:30 AM - 21:30 PM</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Hotline: 02566 538 538</p>
+        <p>Phone number: 0966 535 789</p>
+        <p>Email: Xoi48B.nhahang@gmail.com</p>
+    </div>
+    <div class="copyright"><p>&copy; 2023 Xơi. All rights reserved</p></div>
+</footer>
+</body>
+</html>

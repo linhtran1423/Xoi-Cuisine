@@ -1,0 +1,135 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFA500;
+    background-color: #004349;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    font-family: 'Lato', sans-serif !important;
+}
+
+header {
+    background-color: #ffa500;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+  
+  nav {
+    background-color: #FFA500;
+    position: absolute;
+    top: 30px;
+    right: 160px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 40px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #004349;
+    transition: color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #004349;
+  }
+  
+  nav ul li a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  
+  main {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+   
+  .image-container1 img,
+  .image-container2 img {
+    width: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #012f33;
+    color:  #FFA500;
+    padding: 15px;
+}
+
+.information,
+.contact {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.information h2,
+.contact h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.information p,
+.contact p {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+#back-to-top {
+  font-size: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 1000;
+  display: none;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+#back-to-top a {
+  text-decoration: none;
+  padding: 25px 10px;
+  background-color: #ffa500;
+  color:  #004c53;
+  border-radius: 5px;
+  display: block;
+  transition: all 0.1s ease;
+}

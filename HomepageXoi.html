@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xơi Cuisine</title>
+  <link rel="stylesheet" href="StyleHomepage.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#AboutUs" class="scroll-link">About us</a></li>
+        <li><a href="MenuXoi.html">Menu</a></li>
+        <li><a href="ReservationXoi.html">Reservation</a></li>
+      </ul>
+    </nav>
+    <div class="image-container">
+      <img src="https://images.foody.vn/res/g93/924824/prof/s/foody-upload-api-foody-mobile-tam-vi-190603111021.jpg" alt="Homepage Image">
+      <div class="centered-content">
+        <div class="logo">
+          <img src="file:///C:/Users/Linh/Downloads/xoivang.png" alt="Logo" width="5000" height="2269">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="AboutUs">
+      <div class="header">
+        <h1>WHO WE ARE</h1>
+      </div>
+      <div class="team-members">
+        <div class="member">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406273395_317805247732663_1873407375470253547_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qcq85-7tW9gAX8jzr3Z&_nc_ht=scontent.fhan18-1.fna&oh=00_AfC_ECttp6s6GddNwqBMztLZ7XyZ0qt37J-_Z4U3bn7t9w&oe=65692924" alt="Member 1" width="200" height="200">
+          <p class="member-name">Linh Tran</p>
+          <p class="job-title">Media Manager</p>
+        </div>
+        <div class="member">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/405900028_317816914398163_4913246403063100308_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=23iHheoM4hcAX-spaCv&_nc_ht=scontent.fhan18-1.fna&oh=00_AfDcTfPqLssP8clTdUJ7wF-7Ui7LOuKUSJBkIUMcsoDXUA&oe=65688690" alt="Member 2" width="200" height="200">
+          <p class="member-name">Quynh Anh</p>
+          <p class="job-title">Sales Manager</p>
+        </div>
+        <div class="member">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406202250_317779634401891_7922539718612403090_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JN4Ak-oRXTEAX-mTEdN&_nc_ht=scontent.fhan18-1.fna&oh=00_AfD3KppS8zj-s_Vny0qauz8VrRyf2FFK8bc_DHpD24flqw&oe=656A293C" alt="Member 1" width="200" height="200">
+          <p class="member-name">Thanh Huyen</p>
+          <p class="job-title">Founder</p>
+        </div>        
+        <div class="member">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/405894905_317792407733947_4643990226576225295_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=UeM8eF5AfNQAX8bjg6a&_nc_ht=scontent.fhan18-1.fna&oh=00_AfDMkM1BUgNGjGBLmrXZVJ18F8UOsue65cKyld6iobmx8g&oe=6569D0EB" alt="Member 4" width="200" height="200">
+          <p class="member-name">Boi Quynh</p>
+          <p class="job-title">Receptionist</p>
+        </div>        
+        <div class="member">
+          <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406317494_317793857733802_2614898248524104487_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=nxMQ7tL5EXwAX8x-hVA&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBp8R6nnw74fDDKND2-6d7x6d57O6JvjBvE5Ro6A2FBug&oe=65689AD2" alt="Member 5" width="200" height="200">
+          <p class="member-name">Duc Anh</p>
+          <p class="job-title">Head Chef</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const scrollLinks = document.querySelectorAll('.scroll-link');
+      scrollLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').slice(1);
+          const targetElement = document.getElementById(targetId);
+          const offsetTop = targetElement.offsetTop;
+  
+          window.scroll({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+
+<script>
+    const memberImages = document.querySelectorAll('.member img');
+
+memberImages.forEach(img => {
+  img.addEventListener('mouseover', () => {
+    img.style.transform = 'translateY(-2px)';
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.style.transform = 'translateY(0)';
+  });
+});
+</script>
+
+    <section id="Inspiration" class="article">
+      <div class="article-content1">
+        <div class="text-image-container1">
+          <div class="text-box1">
+            <h1>INSPIRATION</h1>
+            <p>Since ancient times, family meals have always been a source of inspiration and motivation for the people of Vietnam to develop and grow. Whether you are living far away or in your homeland, our simple desire is to spend time together with family. That's why "Xơi" was born. We want to bring you a simple meal that contains warmth in the soul. The tranquil space reminds us of the meals we had in front of our homes. Because for us, home is a place to return to.</p>
+          </div>
+          <div class="image-container1">
+            <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/241445826_2032738973557631_4914123691368603051_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9il3CAZLwPUAX_LnzdK&_nc_ht=scontent.fhan19-1.fna&oh=00_AfACxV0d4xHcPMPCyjWwzuoiHesYna2qyno8q_lDlo64jQ&oe=65680600" alt="Food Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="Food" class="article">
+        <div class="article-content1">
+          <div class="text-image-container">
+            <div class="text-box2">
+              <h1>FOOD</h1>
+              <p>The dishes that "Xoi" wants to bring to diners, even though they are not "spring rolls, phoenix rolls" nor "Son Hao seafood" are simply simple dishes with a bowl, spoon, and chopsticks. Rustic and simple but can also make diners nostalgic thanks to the feeling of "home cooking".</p>
+              <p>The smell of meat and fish braised in a clay pot, the smell of steamed rice from rice straw, the rumble of new eggplants and a bowl of rice and spinach soup cooked with crab, then the greasy pieces of fried beans soaked in fragrant onion fish sauce, accompanied by more. is a piece of egg with meat fragrant with pork fat and greasy fried onions. Sip a cup of Bat Bao tea, cool and sweet with a sweet aftertaste in your throat. Finally, dessert will be served with a bowl of gentle, elegant longan lotus sweet soup.</p>
+              <p>All of the above dishes with bold Tonkin features combined with the ancient wooden house and the wooden porch on the porch will bring diners a feeling of comfort and relaxation after the hustle and bustle of life. Because all we want to bring is for customers to be able to relax their mind and body to slow down a bit so that they can feel warm and comforted by the familiar things that people live too quickly and miss. we are forgot for all days long.</p>
+            </div>
+            <div class="image-container2">
+              <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/311336069_2331341823697343_5864630123585738322_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ik6SSaTY7KUAX92YJBG&_nc_ht=scontent.fhan19-1.fna&oh=00_AfBVYIR6a0ZikLE7hDun7X9pXmlL2Cdt5WAn0IvSgCV7iA&oe=65683E48" alt="Food Image">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="OurGallery">
+        <div class="header">
+          <h1>OUR GALLERY</h1>
+        </div>
+      </section>
+
+      <section>
+        <div class="image-gallery">
+          <div class="images">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406232923_317752411071280_3446522016863888879_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b1tNrExHV5MAX9Wuja5&_nc_ht=scontent.fhan18-1.fna&oh=00_AfCGJojcr_FStH7ZFNNAaYtucDAmMasnPH6LN4qdUYN5Wg&oe=656974DC" alt="Image 1">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406202584_317753101071211_7962921788264552044_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=I2lAFzLUCxgAX_GZu-Y&_nc_ht=scontent.fhan18-1.fna&oh=00_AfA6JevopuUSxQ9uvWCIkgWbm8S65DH9b0mdsZeUzx9xhQ&oe=65685C20" alt="Image 2">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/406287852_317754301071091_4649558707430090660_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XwiqZyrN6j0AX9EZDCU&_nc_ht=scontent.fhan18-1.fna&oh=00_AfBwiDjAcfusxnSfZTLgO0_tiT-oXkpUt6jF_u4JEBHikg&oe=656A0F99" alt="Image 3">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/405308046_317771377736050_6402677613377858014_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=x42RLdXRoigAX8jQFeK&_nc_ht=scontent.fhan18-1.fna&oh=00_AfAg2YooRTC3iiaiP4j-7nY-gJm3_DnWlBFbdXhelLSS5A&oe=6569DCE1" alt="Image 4">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/405287303_317771447736043_6688641346870974104_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=sipfVfTfLesAX-4FUQF&_nc_ht=scontent.fhan18-1.fna&oh=00_AfAqxVDYe0Q5yPtnUkQrl3omClFNgZtg0hCy1WLEtoIaDQ&oe=6569FF97" alt="Image 5">
+            <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/405963413_317780127735175_2361425044511615603_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cZaBYwfim-sAX_n2WWO&_nc_ht=scontent.fhan18-1.fna&oh=00_AfDIeqr_TZDaruQ-xqkbSkMXtDEV0ebEEXmUG3IHUHjifQ&oe=65697B3A" alt="Image 6">
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <aside id="back-to-top">
+    <a href="#header">Back to top ➧</a>
+  </aside>
+  <script>
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+  </script>
+
+  <footer>
+    <div class="information">
+        <h2>Xơi Cuisine | Vietnamese Restaurant</h2>
+        <p>Address: 48B, Phan Dinh Phung Street, Hanoi, Vietnam</p>
+        <p>Opening hours: 10:30 AM - 21:30 PM</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Hotline: 02566 538 538</p>
+        <p>Phone number: 0966 535 789</p>
+        <p>Email: Xoi48B.nhahang@gmail.com</p>
+    </div>
+    <div class="copyright"><p>&copy; 2023 Xơi. All rights reserved</p></div>
+</footer>
+</body>
+</html>
